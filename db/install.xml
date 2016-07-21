@@ -23,9 +23,12 @@
     <TABLE NAME="nsfavoritecourses_module_course" COMMENT="Almacena la relacion entre modulo y cursos(muchos a muchos).">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="id_module" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="id_course" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="id_position" TYPE="int" LENGTH="3" NOTNULL="true"/>
       </FIELDS>
       <KEYS>
-        <KEY />
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
       </KEYS>
     </TABLE>
   </TABLES>
